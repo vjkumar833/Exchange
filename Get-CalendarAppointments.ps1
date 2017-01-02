@@ -29,9 +29,6 @@ param(
 #Change this variable to your CAS server or OWA DNS Name
 $EWSurl = "https://owa.outlook.com/EWS/Exchange.asmx"
 
-Add-PSsnapin Microsoft.Exchange.Management.PowerShell.E2010
-$Forest = Set-ADServerSettings -ViewEntireForest $true
-
 #Web Service
 $EWSServicePath = "C:\Program Files\Microsoft\Exchange\Web Services\2.0\Microsoft.Exchange.WebServices.dll"
 Import-Module $EWSServicePath
